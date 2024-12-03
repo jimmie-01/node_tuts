@@ -1,0 +1,24 @@
+{
+  "name": "node_tuts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/jimmie-01/node_tuts.git"
+  },
+  "author": "jimmie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimmie-01/node_tuts/issues"
+  },
+  "homepage": "https://github.com/jimmie-01/node_tuts#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}

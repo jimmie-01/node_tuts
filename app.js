@@ -1,10 +1,14 @@
 const express = require('express');
+const mongoose = require('mongoose');
 
 // express app
 const app = express();
 
 // connect to mongoDB
 const dbURI = 'mongodb+srv://jimmie:lastname@nodetuts.evas5.mongodb.net/?retryWrites=true&w=majority&appName=nodetuts'
+mongoose.connect(dbURI)
+	.then((result) => console.log('connected to db'))
+	.catch((err) => console.log(err));
 
 
 app.set('view engine', 'ejs');

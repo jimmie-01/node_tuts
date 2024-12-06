@@ -3,6 +3,10 @@ const express = require('express');
 // express app
 const app = express();
 
+// connect to mongoDB
+const dbURI = 'mongodb+srv://jimmie:lastname@nodetuts.evas5.mongodb.net/?retryWrites=true&w=majority&appName=nodetuts'
+
+
 app.set('view engine', 'ejs');
 app.set('views', 'ejs_views');
 

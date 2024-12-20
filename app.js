@@ -7,7 +7,7 @@ const app = express();
 
 // connect to mongoDB
 const dbURI = 'mongodb+srv://jimmie:lastname@nodetuts.evas5.mongodb.net/node-tuts?retryWrites=true&w=majority&appName=nodetuts'
-mongoose.connect(dbURI)
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
 .then((result) => app.listen(3000, 'localhost'))
 .catch((err) => console.log(err));
 
@@ -18,7 +18,6 @@ app.set('views', 'ejs_views');
 // middleware and static files
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
-
 
 // routes
 app.get('/', (req, res) => {
